@@ -1,5 +1,5 @@
 """
-Django settings for dango_blog project.
+Django settings for django_blog project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'hbe&kv==_fgvncql@041%r+%1z)z845_%2ce8@e1$oyn-aun-1'
+SECRET_KEY = '32w23aemzj6@zq-3bw@_n%6jg%i$k6)r4fr$)8ua$ui5mj9l86'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -47,9 +47,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'dango_blog.urls'
+ROOT_URLCONF = 'django_blog.urls'
 
-WSGI_APPLICATION = 'dango_blog.wsgi.application'
+WSGI_APPLICATION = 'django_blog.wsgi.application'
 
 
 # Database
