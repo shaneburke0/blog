@@ -1,0 +1,26 @@
+{
+  "name": "django_blog",
+  "version": "0.0.1",
+  "homepage": "https://github.com/shaneob/blog",
+  "authors": [
+    "Shane Burke <shaneob121@hotmail.com>"
+  ],
+  "description": "Python blog",
+  "main": "manage.py",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "html5-boilerplate": "~4.3.0"
+  }
+}
