@@ -2,6 +2,8 @@ from django.test import TestCase
 from django.utils import timezone
 from blogengine.models import Post
 import markdown
+from django.contrib.flatpages.models import FlatPage
+from django.contrib.sites.models import Site
 
 # Create your tests here.
 class PostTest(TestCase):
@@ -182,6 +184,7 @@ class PostViewTest(LiveServerTestCase):
         post = Post()
         post.title = 'My first post'
         post.text = 'This is [my first blog post](http://127.0.0.1:8000/)'
+        post.slug = 'my-first-post'
         post.pub_date = timezone.now()
         post.save()
 
@@ -212,6 +215,7 @@ class PostViewTest(LiveServerTestCase):
         post = Post()
         post.title = 'My first post'
         post.text = 'This is [my first blog post](http://127.0.0.1:8000/)'
+        post.slug = 'my-first-post'
         post.pub_date = timezone.now()
         post.save()
 
@@ -227,10 +231,10 @@ class PostViewTest(LiveServerTestCase):
         # Fetch the post
         response = self.client.get(post_url)
         self.assertEquals(response.status_code, 200)
-    
+
         # Check the post title is in the response
         self.assertTrue(post.title in response.content)
-    
+
         # Check the post text is in the response
         self.assertTrue(markdown.markdown(post.text) in response.content)
 
