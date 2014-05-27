@@ -1,5 +1,23 @@
 [
 {
+  "pk": 1, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "shane", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-05-26T10:42:16.956Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$61iW0TGp9zAD$AG6XbcmrtVDbNxrXtNjX07mD+ohpt+N+bwtLRzQWJ3M=", 
+    "email": "shaneburke0@gmail.com", 
+    "date_joined": "2014-05-26T10:42:16.956Z"
+  }
+},
+{
   "pk": 2, 
   "model": "auth.user", 
   "fields": {
