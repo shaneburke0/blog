@@ -392,6 +392,9 @@ class PostViewTest(BaseAcceptanceTest):
         # Check the post text is in the response
         self.assertTrue(markdown.markdown(post.text) in response.content)
 
+        # Check the post category is in the response
+        self.assertTrue(post.category.name in response.content)
+
         # Check the post date is in the response
         self.assertTrue(str(post.pub_date.year) in response.content)
         self.assertTrue(post.pub_date.strftime('%b') in response.content)
@@ -444,6 +447,9 @@ class PostViewTest(BaseAcceptanceTest):
         # Check the post title is in the response
         self.assertTrue(post.title in response.content)
 
+        # Check the post category is in the response
+        self.assertTrue(post.category.name in response.content)
+
         # Check the post text is in the response
         self.assertTrue(markdown.markdown(post.text) in response.content)
 
@@ -454,4 +460,5 @@ class PostViewTest(BaseAcceptanceTest):
 
         # Check the link is marked up properly
         self.assertTrue('<a href="http://127.0.0.1:8000/">my first blog post</a>' in response.content)
+
 
