@@ -1,0 +1,423 @@
+************* Module blogengine.admin
+blogengine/admin.py:1: [W0403(relative-import), ] Relative import 'models', should be 'blogengine.models'
+blogengine/admin.py:5: [R0904(too-many-public-methods), PostAdmin] Too many public methods (58/50)
+blogengine/admin.py:3: [W0611(unused-import), ] Unused import User
+************* Module blogengine.tests
+blogengine/tests.py:80: [C0303(trailing-whitespace), ] Trailing whitespace
+blogengine/tests.py:194: [C0330(bad-continuation), ] Wrong continued indentation.
+            follow=True
+            ^                       |
+blogengine/tests.py:195: [C0330(bad-continuation), ] Wrong continued indentation.
+        )
+        ^                          |
+blogengine/tests.py:268: [C0330(bad-continuation), ] Wrong continued indentation.
+            follow=True
+            ^                       |
+blogengine/tests.py:269: [C0330(bad-continuation), ] Wrong continued indentation.
+        )
+        ^                          |
+blogengine/tests.py:360: [C0330(bad-continuation), ] Wrong continued indentation.
+        follow=True
+        ^                           |
+blogengine/tests.py:361: [C0330(bad-continuation), ] Wrong continued indentation.
+        )
+        ^                          |
+blogengine/tests.py:370: [C0303(trailing-whitespace), ] Trailing whitespace
+blogengine/tests.py:395: [C0330(bad-continuation), ] Wrong continued indentation.
+        follow=True
+        ^                           |
+blogengine/tests.py:396: [C0330(bad-continuation), ] Wrong continued indentation.
+        )
+        ^                          |
+blogengine/tests.py:428: [C0303(trailing-whitespace), ] Trailing whitespace
+blogengine/tests.py:455: [C0330(bad-continuation), ] Wrong continued indentation.
+        follow=True
+        ^                           |
+blogengine/tests.py:456: [C0330(bad-continuation), ] Wrong continued indentation.
+        )
+        ^                          |
+blogengine/tests.py:491: [C0303(trailing-whitespace), ] Trailing whitespace
+blogengine/tests.py:806: [C0303(trailing-whitespace), ] Trailing whitespace
+blogengine/tests.py:1: [C0302(too-many-lines), ] Too many lines in module (879)
+blogengine/tests.py:14: [E1120(no-value-for-parameter), PostTest.test_create_category] No value for argument 'name' in constructor call
+blogengine/tests.py:14: [E1120(no-value-for-parameter), PostTest.test_create_category] No value for argument 'bases' in constructor call
+blogengine/tests.py:14: [E1120(no-value-for-parameter), PostTest.test_create_category] No value for argument 'attrs' in constructor call
+blogengine/tests.py:37: [E1120(no-value-for-parameter), PostTest.test_create_tag] No value for argument 'name' in constructor call
+blogengine/tests.py:37: [E1120(no-value-for-parameter), PostTest.test_create_tag] No value for argument 'bases' in constructor call
+blogengine/tests.py:37: [E1120(no-value-for-parameter), PostTest.test_create_tag] No value for argument 'attrs' in constructor call
+blogengine/tests.py:60: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'name' in constructor call
+blogengine/tests.py:60: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:60: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:66: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'name' in constructor call
+blogengine/tests.py:66: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:66: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:76: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'name' in constructor call
+blogengine/tests.py:76: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:76: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:82: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'name' in constructor call
+blogengine/tests.py:82: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:82: [E1120(no-value-for-parameter), PostTest.test_create_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:97: [E1101(no-member), PostTest.test_create_post] Instance of 'ManyToManyField' has no 'add' member
+blogengine/tests.py:58: [R0915(too-many-statements), PostTest.test_create_post] Too many statements (51/50)
+blogengine/tests.py:11: [R0904(too-many-public-methods), PostTest] Too many public methods (68/50)
+blogengine/tests.py:132: [R0904(too-many-public-methods), BaseAcceptanceTest] Too many public methods (66/50)
+blogengine/tests.py:207: [E1120(no-value-for-parameter), AdminTest.test_edit_category] No value for argument 'name' in constructor call
+blogengine/tests.py:207: [E1120(no-value-for-parameter), AdminTest.test_edit_category] No value for argument 'bases' in constructor call
+blogengine/tests.py:207: [E1120(no-value-for-parameter), AdminTest.test_edit_category] No value for argument 'attrs' in constructor call
+blogengine/tests.py:234: [E1120(no-value-for-parameter), AdminTest.test_delete_category] No value for argument 'name' in constructor call
+blogengine/tests.py:234: [E1120(no-value-for-parameter), AdminTest.test_delete_category] No value for argument 'bases' in constructor call
+blogengine/tests.py:234: [E1120(no-value-for-parameter), AdminTest.test_delete_category] No value for argument 'attrs' in constructor call
+blogengine/tests.py:281: [E1120(no-value-for-parameter), AdminTest.test_edit_tag] No value for argument 'name' in constructor call
+blogengine/tests.py:281: [E1120(no-value-for-parameter), AdminTest.test_edit_tag] No value for argument 'bases' in constructor call
+blogengine/tests.py:281: [E1120(no-value-for-parameter), AdminTest.test_edit_tag] No value for argument 'attrs' in constructor call
+blogengine/tests.py:308: [E1120(no-value-for-parameter), AdminTest.test_delete_tag] No value for argument 'name' in constructor call
+blogengine/tests.py:308: [E1120(no-value-for-parameter), AdminTest.test_delete_tag] No value for argument 'bases' in constructor call
+blogengine/tests.py:308: [E1120(no-value-for-parameter), AdminTest.test_delete_tag] No value for argument 'attrs' in constructor call
+blogengine/tests.py:331: [E1120(no-value-for-parameter), AdminTest.test_create_post] No value for argument 'name' in constructor call
+blogengine/tests.py:331: [E1120(no-value-for-parameter), AdminTest.test_create_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:331: [E1120(no-value-for-parameter), AdminTest.test_create_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:337: [E1120(no-value-for-parameter), AdminTest.test_create_post] No value for argument 'name' in constructor call
+blogengine/tests.py:337: [E1120(no-value-for-parameter), AdminTest.test_create_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:337: [E1120(no-value-for-parameter), AdminTest.test_create_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:373: [E1120(no-value-for-parameter), AdminTest.test_create_post_without_tag] No value for argument 'name' in constructor call
+blogengine/tests.py:373: [E1120(no-value-for-parameter), AdminTest.test_create_post_without_tag] No value for argument 'bases' in constructor call
+blogengine/tests.py:373: [E1120(no-value-for-parameter), AdminTest.test_create_post_without_tag] No value for argument 'attrs' in constructor call
+blogengine/tests.py:408: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'name' in constructor call
+blogengine/tests.py:408: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:408: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:414: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'name' in constructor call
+blogengine/tests.py:414: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:414: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:424: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'name' in constructor call
+blogengine/tests.py:424: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:424: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:430: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'name' in constructor call
+blogengine/tests.py:430: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:430: [E1120(no-value-for-parameter), AdminTest.test_edit_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:438: [E1101(no-member), AdminTest.test_edit_post] Instance of 'ManyToManyField' has no 'add' member
+blogengine/tests.py:471: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'name' in constructor call
+blogengine/tests.py:471: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:471: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:477: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'name' in constructor call
+blogengine/tests.py:477: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:477: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:487: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'name' in constructor call
+blogengine/tests.py:487: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:487: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:493: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'name' in constructor call
+blogengine/tests.py:493: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'bases' in constructor call
+blogengine/tests.py:493: [E1120(no-value-for-parameter), AdminTest.test_delete_post] No value for argument 'attrs' in constructor call
+blogengine/tests.py:502: [E1101(no-member), AdminTest.test_delete_post] Instance of 'ManyToManyField' has no 'add' member
+blogengine/tests.py:137: [R0904(too-many-public-methods), AdminTest] Too many public methods (78/50)
+blogengine/tests.py:528: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'name' in constructor call
+blogengine/tests.py:528: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'bases' in constructor call
+blogengine/tests.py:528: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'attrs' in constructor call
+blogengine/tests.py:534: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'name' in constructor call
+blogengine/tests.py:534: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'bases' in constructor call
+blogengine/tests.py:534: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'attrs' in constructor call
+blogengine/tests.py:544: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'name' in constructor call
+blogengine/tests.py:544: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'bases' in constructor call
+blogengine/tests.py:544: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'attrs' in constructor call
+blogengine/tests.py:550: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'name' in constructor call
+blogengine/tests.py:550: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'bases' in constructor call
+blogengine/tests.py:550: [E1120(no-value-for-parameter), PostViewTest.test_index] No value for argument 'attrs' in constructor call
+blogengine/tests.py:559: [E1101(no-member), PostViewTest.test_index] Instance of 'ManyToManyField' has no 'add' member
+blogengine/tests.py:592: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'name' in constructor call
+blogengine/tests.py:592: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:592: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:598: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'name' in constructor call
+blogengine/tests.py:598: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:598: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:608: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'name' in constructor call
+blogengine/tests.py:608: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:608: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:614: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'name' in constructor call
+blogengine/tests.py:614: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:614: [E1120(no-value-for-parameter), PostViewTest.test_post_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:623: [E1101(no-member), PostViewTest.test_post_page] Instance of 'ManyToManyField' has no 'add' member
+blogengine/tests.py:662: [E1120(no-value-for-parameter), PostViewTest.test_category_page] No value for argument 'name' in constructor call
+blogengine/tests.py:662: [E1120(no-value-for-parameter), PostViewTest.test_category_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:662: [E1120(no-value-for-parameter), PostViewTest.test_category_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:672: [E1120(no-value-for-parameter), PostViewTest.test_category_page] No value for argument 'name' in constructor call
+blogengine/tests.py:672: [E1120(no-value-for-parameter), PostViewTest.test_category_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:672: [E1120(no-value-for-parameter), PostViewTest.test_category_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:678: [E1120(no-value-for-parameter), PostViewTest.test_category_page] No value for argument 'name' in constructor call
+blogengine/tests.py:678: [E1120(no-value-for-parameter), PostViewTest.test_category_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:678: [E1120(no-value-for-parameter), PostViewTest.test_category_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:723: [E1120(no-value-for-parameter), PostViewTest.test_tag_page] No value for argument 'name' in constructor call
+blogengine/tests.py:723: [E1120(no-value-for-parameter), PostViewTest.test_tag_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:723: [E1120(no-value-for-parameter), PostViewTest.test_tag_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:733: [E1120(no-value-for-parameter), PostViewTest.test_tag_page] No value for argument 'name' in constructor call
+blogengine/tests.py:733: [E1120(no-value-for-parameter), PostViewTest.test_tag_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:733: [E1120(no-value-for-parameter), PostViewTest.test_tag_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:739: [E1120(no-value-for-parameter), PostViewTest.test_tag_page] No value for argument 'name' in constructor call
+blogengine/tests.py:739: [E1120(no-value-for-parameter), PostViewTest.test_tag_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:739: [E1120(no-value-for-parameter), PostViewTest.test_tag_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:747: [E1101(no-member), PostViewTest.test_tag_page] Instance of 'ManyToManyField' has no 'add' member
+blogengine/tests.py:756: [E1101(no-member), PostViewTest.test_tag_page] Instance of 'ManyToManyField' has no 'all' member
+blogengine/tests.py:763: [E1101(no-member), PostViewTest.test_tag_page] Instance of 'ManyToManyField' has no 'all' member
+blogengine/tests.py:525: [R0904(too-many-public-methods), PostViewTest] Too many public methods (72/50)
+blogengine/tests.py:786: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'name' in constructor call
+blogengine/tests.py:786: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'bases' in constructor call
+blogengine/tests.py:786: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'attrs' in constructor call
+blogengine/tests.py:792: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'name' in constructor call
+blogengine/tests.py:792: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'bases' in constructor call
+blogengine/tests.py:792: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'attrs' in constructor call
+blogengine/tests.py:802: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'name' in constructor call
+blogengine/tests.py:802: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'bases' in constructor call
+blogengine/tests.py:802: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'attrs' in constructor call
+blogengine/tests.py:808: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'name' in constructor call
+blogengine/tests.py:808: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'bases' in constructor call
+blogengine/tests.py:808: [E1120(no-value-for-parameter), FeedTest.test_all_post_feed] No value for argument 'attrs' in constructor call
+blogengine/tests.py:821: [E1101(no-member), FeedTest.test_all_post_feed] Instance of 'ManyToManyField' has no 'add' member
+blogengine/tests.py:783: [R0904(too-many-public-methods), FeedTest] Too many public methods (67/50)
+blogengine/tests.py:849: [E1120(no-value-for-parameter), FlatPageViewTest.test_create_flat_page] No value for argument 'name' in constructor call
+blogengine/tests.py:849: [E1120(no-value-for-parameter), FlatPageViewTest.test_create_flat_page] No value for argument 'bases' in constructor call
+blogengine/tests.py:849: [E1120(no-value-for-parameter), FlatPageViewTest.test_create_flat_page] No value for argument 'attrs' in constructor call
+blogengine/tests.py:856: [E1101(no-member), FlatPageViewTest.test_create_flat_page] Instance of 'ManyToManyField' has no 'add' member
+blogengine/tests.py:846: [R0904(too-many-public-methods), FlatPageViewTest] Too many public methods (67/50)
+************* Module blogengine.views
+blogengine/views.py:7: [R0901(too-many-ancestors), CategoryListView] Too many ancestors (8/7)
+blogengine/views.py:9: [E1101(no-member), CategoryListView.get_queryset] Instance of 'CategoryListView' has no 'kwargs' member
+blogengine/views.py:17: [R0901(too-many-ancestors), TagListView] Too many ancestors (8/7)
+blogengine/views.py:19: [E1101(no-member), TagListView.get_queryset] Instance of 'TagListView' has no 'kwargs' member
+blogengine/views.py:1: [W0611(unused-import), ] Unused import render
+************* Module blogengine.models
+blogengine/models.py:41: [C0303(trailing-whitespace), ] Trailing whitespace
+blogengine/models.py:12: [W0221(arguments-differ), Category.save] Arguments number differs from overridden method
+blogengine/models.py:17: [E0202(method-hidden), Category.get_absolute_url] An attribute defined in django.db.models.base line 304 hides this method
+blogengine/models.py:23: [C1001(old-style-class), Category.Meta] Old-style class defined.
+blogengine/models.py:31: [W0221(arguments-differ), Tag.save] Arguments number differs from overridden method
+blogengine/models.py:36: [E0202(method-hidden), Tag.get_absolute_url] An attribute defined in django.db.models.base line 304 hides this method
+blogengine/models.py:53: [E0202(method-hidden), Post.get_absolute_url] An attribute defined in django.db.models.base line 304 hides this method
+blogengine/models.py:59: [C1001(old-style-class), Post.Meta] Old-style class defined.
+************* Module blogengine.urls
+blogengine/urls.py:7: [C0330(bad-continuation), ] Wrong continued indentation.
+    # Index
+    ^                  |
+blogengine/urls.py:8: [C0330(bad-continuation), ] Wrong continued indentation.
+    url(r'^(?P<page>\d+)?/?$', ListView.as_view(
+    ^                  |
+blogengine/urls.py:13: [C0330(bad-continuation), ] Wrong continued indentation.
+    # Individual posts
+    ^                  |
+blogengine/urls.py:14: [C0330(bad-continuation), ] Wrong continued indentation.
+    url(r'^(?P<pub_date__year>\d{4})/(?P<pub_date__month>\d{1,2})/(?P<slug>[a-zA-Z0-9-]+)/?$', DetailView.as_view(
+    ^                  |
+blogengine/urls.py:18: [C0330(bad-continuation), ] Wrong continued indentation.
+    # Categories
+    ^                  |
+blogengine/urls.py:19: [C0330(bad-continuation), ] Wrong continued indentation.
+    url(r'^category/(?P<slug>[a-zA-Z0-9-]+)/?$', CategoryListView.as_view(
+    ^                  |
+blogengine/urls.py:24: [C0330(bad-continuation), ] Wrong continued indentation.
+    # Tags
+    ^                  |
+blogengine/urls.py:25: [C0330(bad-continuation), ] Wrong continued indentation.
+    url(r'^tag/(?P<slug>[a-zA-Z0-9-]+)/?$', TagListView.as_view(
+    ^                  |
+blogengine/urls.py:30: [C0330(bad-continuation), ] Wrong continued indentation.
+    # Post RSS feed
+    ^                  |
+blogengine/urls.py:31: [C0330(bad-continuation), ] Wrong continued indentation.
+    url(r'^feeds/posts/$', PostsFeed()),
+    ^                  |
+blogengine/urls.py:32: [C0330(bad-continuation), ] Wrong continued indentation.
+)
+^                     |
+blogengine/urls.py:8: [E1120(no-value-for-parameter), ] No value for argument 'cls' in unbound method call
+blogengine/urls.py:14: [E1120(no-value-for-parameter), ] No value for argument 'cls' in unbound method call
+blogengine/urls.py:19: [E1120(no-value-for-parameter), ] No value for argument 'cls' in unbound method call
+blogengine/urls.py:25: [E1120(no-value-for-parameter), ] No value for argument 'cls' in unbound method call
+************* Module blogengine.templatetags.custom_markdown
+blogengine/templatetags/custom_markdown.py:16: [C0330(bad-continuation), ] Wrong continued indentation.
+                                       extras = extras))
+                                       ^|
+blogengine/templatetags/custom_markdown.py:16: [C0326(bad-whitespace), ] No space allowed around keyword argument assignment
+                                       extras = extras))
+                                              ^
+************* Module blogengine.templatetags
+blogengine/templatetags/__init__.py:1: [F0401(import-error), ] Unable to import 'markdown'
+************* Module blogengine.templatetags.__init__
+blogengine/templatetags/__init__.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==blogengine.templatetags.__init__:2
+==blogengine.templatetags.custom_markdown:2
+from django import template
+from django.template.defaultfilters import stringfilter
+from django.utils.encoding import force_unicode
+from django.utils.safestring import mark_safe
+
+register = template.Library()
+
+@register.filter(is_safe=True)
+@stringfilter
+def custom_markdown(value):
+
+
+Report
+======
+601 statements analysed.
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |10    |10       |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.942 |0.942    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+External dependencies
+---------------------
+::
+
+    django 
+      \-conf 
+      | \-urls (blogengine.urls)
+      \-contrib 
+      | \-admin (blogengine.admin)
+      | \-auth 
+      | | \-models (blogengine.models,blogengine.admin,blogengine.tests)
+      | \-flatpages 
+      | | \-models (blogengine.tests)
+      | \-sites 
+      | | \-models (blogengine.models,blogengine.tests)
+      | \-syndication 
+      |   \-views (blogengine.views)
+      \-db 
+      | \-models (blogengine.models)
+      \-shortcuts (blogengine.views)
+      \-template (blogengine.templatetags,blogengine.templatetags.custom_markdown)
+      | \-defaultfilters (blogengine.templatetags,blogengine.templatetags.custom_markdown)
+      \-test (blogengine.tests)
+      \-utils 
+      | \-encoding (blogengine.templatetags,blogengine.templatetags.custom_markdown)
+      | \-safestring (blogengine.templatetags,blogengine.templatetags.custom_markdown)
+      | \-text (blogengine.models)
+      | \-timezone (blogengine.tests)
+      \-views 
+        \-generic (blogengine.views,blogengine.urls)
+    feedparser (blogengine.tests)
+    markdown2 (blogengine.templatetags.custom_markdown,blogengine.tests)
+
+
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |8      |8          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |15     |15         |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |38     |38         |=          |28.95       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |2      |2          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |32     |29       |+3.00      |
++-----------+-------+---------+-----------+
+|refactor   |11     |11       |=          |
++-----------+-------+---------+-----------+
+|warning    |5      |5        |=          |
++-----------+-------+---------+-----------+
+|error      |139    |139      |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++------------------+------+--------+---------+-----------+
+|module            |error |warning |refactor |convention |
++==================+======+========+=========+===========+
+|blogengine.tests  |93.53 |0.00    |63.64    |50.00      |
++------------------+------+--------+---------+-----------+
+|blogengine.urls   |2.88  |0.00    |0.00     |34.38      |
++------------------+------+--------+---------+-----------+
+|blogengine.models |2.16  |40.00   |0.00     |9.38       |
++------------------+------+--------+---------+-----------+
+|blogengine.views  |1.44  |20.00   |18.18    |0.00       |
++------------------+------+--------+---------+-----------+
+|blogengine.admin  |0.00  |40.00   |9.09     |0.00       |
++------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++------------------------+------------+
+|message id              |occurrences |
++========================+============+
+|no-value-for-parameter  |124         |
++------------------------+------------+
+|bad-continuation        |22          |
++------------------------+------------+
+|no-member               |12          |
++------------------------+------------+
+|too-many-public-methods |7           |
++------------------------+------------+
+|trailing-whitespace     |6           |
++------------------------+------------+
+|method-hidden           |3           |
++------------------------+------------+
+|unused-import           |2           |
++------------------------+------------+
+|too-many-ancestors      |2           |
++------------------------+------------+
+|old-style-class         |2           |
++------------------------+------------+
+|arguments-differ        |2           |
++------------------------+------------+
+|too-many-statements     |1           |
++------------------------+------------+
+|too-many-lines          |1           |
++------------------------+------------+
+|relative-import         |1           |
++------------------------+------------+
+|import-error            |1           |
++------------------------+------------+
+|duplicate-code          |1           |
++------------------------+------------+
+|bad-whitespace          |1           |
++------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at -2.36/10 (previous run: -2.31/10, -0.05)
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |650    |74.97 |649      |+1.00      |
++----------+-------+------+---------+-----------+
+|docstring |34     |3.92  |34       |=          |
++----------+-------+------+---------+-----------+
+|comment   |150    |17.30 |149      |+1.00      |
++----------+-------+------+---------+-----------+
+|empty     |33     |3.81  |34       |-1.00      |
++----------+-------+------+---------+-----------+
+
+
+
