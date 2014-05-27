@@ -1,0 +1,293 @@
+<testsuite errors="7" failures="0" name="Django Project Tests" skips="0" tests="23" time="10.890"><testcase classname="blogengine.tests.PostTest" name="test_create_category" time="0.002506" /><testcase classname="blogengine.tests.PostTest" name="test_create_post" time="0.215243" /><testcase classname="blogengine.tests.PostTest" name="test_create_tag" time="0.002216" /><testcase classname="blogengine.tests.AdminTest" name="test_create_category" time="0.618163" /><testcase classname="blogengine.tests.AdminTest" name="test_create_post" time="0.573172" /><testcase classname="blogengine.tests.AdminTest" name="test_create_post_without_tag" time="0.531436" /><testcase classname="blogengine.tests.AdminTest" name="test_create_tag" time="0.463799" /><testcase classname="blogengine.tests.AdminTest" name="test_delete_category" time="0.333261" /><testcase classname="blogengine.tests.AdminTest" name="test_delete_post" time="0.528629" /><testcase classname="blogengine.tests.AdminTest" name="test_delete_tag" time="0.329315" /><testcase classname="blogengine.tests.AdminTest" name="test_edit_category" time="0.350781" /><testcase classname="blogengine.tests.AdminTest" name="test_edit_post" time="0.577082" /><testcase classname="blogengine.tests.AdminTest" name="test_edit_tag" time="0.347591" /><testcase classname="blogengine.tests.AdminTest" name="test_login" time="0.356684" /><testcase classname="blogengine.tests.AdminTest" name="test_logout" time="0.363540" /><testcase classname="blogengine.tests.FeedTest" name="test_all_post_feed" time="0.262932" /><testcase classname="blogengine.tests.FlatPageViewTest" name="test_create_flat_page" time="0.051043"><error message="'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown" type="django.template.base.TemplateSyntaxError">Traceback (most recent call last):
+  File "/home/shane/projects/blog/blogengine/tests.py", line 874, in test_create_flat_page
+    response = self.client.get(page_url)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 473, in get
+    response = super(Client, self).get(path, data=data, **extra)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 280, in get
+    return self.request(**r)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 444, in request
+    six.reraise(*exc_info)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 112, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/contrib/flatpages/views.py", line 45, in flatpage
+    return render_flatpage(request, f)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/utils/decorators.py", line 99, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/contrib/flatpages/views.py", line 60, in render_flatpage
+    t = loader.get_template(DEFAULT_TEMPLATE)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown
+</error></testcase><testcase classname="blogengine.tests.PostViewTest" name="test_category_page" time="0.241232"><error message="'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown" type="django.template.base.TemplateSyntaxError">Traceback (most recent call last):
+  File "/home/shane/projects/blog/blogengine/tests.py", line 698, in test_category_page
+    response = self.client.get(category_url)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 473, in get
+    response = super(Client, self).get(path, data=data, **extra)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 280, in get
+    return self.request(**r)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 444, in request
+    six.reraise(*exc_info)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 180, in select_template
+    return get_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown
+</error></testcase><testcase classname="blogengine.tests.PostViewTest" name="test_index" time="0.206155"><error message="'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown" type="django.template.base.TemplateSyntaxError">Traceback (most recent call last):
+  File "/home/shane/projects/blog/blogengine/tests.py", line 566, in test_index
+    response = self.client.get('/')
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 473, in get
+    response = super(Client, self).get(path, data=data, **extra)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 280, in get
+    return self.request(**r)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 444, in request
+    six.reraise(*exc_info)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 180, in select_template
+    return get_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown
+</error></testcase><testcase classname="blogengine.tests.PostViewTest" name="test_nonexistent_category_page" time="0.016799"><error message="'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown" type="django.template.base.TemplateSyntaxError">Traceback (most recent call last):
+  File "/home/shane/projects/blog/blogengine/tests.py", line 717, in test_nonexistent_category_page
+    response = self.client.get(category_url)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 473, in get
+    response = super(Client, self).get(path, data=data, **extra)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 280, in get
+    return self.request(**r)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 444, in request
+    six.reraise(*exc_info)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 180, in select_template
+    return get_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown
+</error></testcase><testcase classname="blogengine.tests.PostViewTest" name="test_nonexistent_tag_page" time="0.016481"><error message="'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown" type="django.template.base.TemplateSyntaxError">Traceback (most recent call last):
+  File "/home/shane/projects/blog/blogengine/tests.py", line 778, in test_nonexistent_tag_page
+    response = self.client.get(tag_url)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 473, in get
+    response = super(Client, self).get(path, data=data, **extra)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 280, in get
+    return self.request(**r)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 444, in request
+    six.reraise(*exc_info)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 180, in select_template
+    return get_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown
+</error></testcase><testcase classname="blogengine.tests.PostViewTest" name="test_post_page" time="0.211785"><error message="'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown" type="django.template.base.TemplateSyntaxError">Traceback (most recent call last):
+  File "/home/shane/projects/blog/blogengine/tests.py", line 636, in test_post_page
+    response = self.client.get(post_url)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 473, in get
+    response = super(Client, self).get(path, data=data, **extra)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 280, in get
+    return self.request(**r)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 444, in request
+    six.reraise(*exc_info)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 180, in select_template
+    return get_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown
+</error></testcase><testcase classname="blogengine.tests.PostViewTest" name="test_tag_page" time="0.209412"><error message="'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown" type="django.template.base.TemplateSyntaxError">Traceback (most recent call last):
+  File "/home/shane/projects/blog/blogengine/tests.py", line 759, in test_tag_page
+    response = self.client.get(tag_url)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 473, in get
+    response = super(Client, self).get(path, data=data, **extra)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 280, in get
+    return self.request(**r)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/test/client.py", line 444, in request
+    six.reraise(*exc_info)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.select_template(template)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 180, in select_template
+    return get_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/shane/projects/blog/venv/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'custom_markdown' is not a valid tag library: Template library custom_markdown not found, tried django.templatetags.custom_markdown,django.contrib.admin.templatetags.custom_markdown,django.contrib.staticfiles.templatetags.custom_markdown,django.contrib.flatpages.templatetags.custom_markdown
+</error></testcase></testsuite>
