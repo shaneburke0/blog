@@ -1,5 +1,5 @@
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_tutorial_blog_ng.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_blog.settings")
 
 from django.core.wsgi import get_wsgi_application
 from dj_static import Cling
