@@ -357,6 +357,12 @@ class PostViewTest(BaseAcceptanceTest):
         category.description = 'The Python programming language'
         category.save()
 
+        # Create the tag
+        tag = Tag()
+        tag.name = 'perl'
+        tag.description = 'The Perl programming language'
+        tag.save()
+
         # Create the author
         author = User.objects.create_user('testuser', 'user@example.com', 'password')
         author.save()
@@ -377,6 +383,7 @@ class PostViewTest(BaseAcceptanceTest):
         post.site = site
         post.category = category
         post.save()
+        post.tags.add(tag)
 
         # Check new post saved
         all_posts = Post.objects.all()
@@ -395,6 +402,10 @@ class PostViewTest(BaseAcceptanceTest):
         # Check the post category is in the response
         self.assertTrue(post.category.name in response.content)
 
+        # Check the post tag is in the response
+        post_tag = all_posts[0].tags.all()[0]
+        self.assertTrue(post_tag.name in response.content)
+
         # Check the post date is in the response
         self.assertTrue(str(post.pub_date.year) in response.content)
         self.assertTrue(post.pub_date.strftime('%b') in response.content)
@@ -409,6 +420,12 @@ class PostViewTest(BaseAcceptanceTest):
         category.name = 'python'
         category.description = 'The Python programming language'
         category.save()
+
+        # Create the tag
+        tag = Tag()
+        tag.name = 'perl'
+        tag.description = 'The Perl programming language'
+        tag.save()
 
         # Create the author
         author = User.objects.create_user('testuser', 'user@example.com', 'password')
@@ -429,6 +446,8 @@ class PostViewTest(BaseAcceptanceTest):
         post.author = author
         post.site = site
         post.category = category
+        post.save()
+        post.tags.add(tag)
         post.save()
 
         # Check new post saved
@@ -450,6 +469,10 @@ class PostViewTest(BaseAcceptanceTest):
         # Check the post category is in the response
         self.assertTrue(post.category.name in response.content)
 
+        # Check the post tag is in the response
+        post_tag = all_posts[0].tags.all()[0]
+        self.assertTrue(post_tag.name in response.content)
+
         # Check the post text is in the response
         self.assertTrue(markdown.markdown(post.text) in response.content)
 
@@ -460,5 +483,4 @@ class PostViewTest(BaseAcceptanceTest):
 
         # Check the link is marked up properly
         self.assertTrue('<a href="http://127.0.0.1:8000/">my first blog post</a>' in response.content)
-
 
