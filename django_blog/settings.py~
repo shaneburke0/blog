@@ -57,9 +57,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.cache.FetchFromCacheMiddleware',
 )
 
-ROOT_URLCONF = 'blog.urls'
+ROOT_URLCONF = 'django_blog.urls'
 
-WSGI_APPLICATION = 'blog.wsgi.application'
+WSGI_APPLICATION = 'django_blog.wsgi.application'
 
 
 # Database
