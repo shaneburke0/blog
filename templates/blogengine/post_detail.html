@@ -3,9 +3,10 @@
     {% load custom_markdown %}
 
     {% block content %}
+    <div class="panel panel-default">
         <div class="post col-md-12">
         <h1>{{ object.title }}</h1>
-        <h3>{{ object.pub_date }}</h3>
+        <h3 class="alt"><span class="glyphicon glyphicon-calendar">&#160;</span>{{ object.pub_date }}</h3>
         {{ object.text|custom_markdown }}
         </div>
         {% if object.category %}
@@ -26,5 +27,5 @@
         <div class="fb-comments" data-href="http://{{ object.site }}{{ object.get_absolute_url }}" data-width="470" data-num-posts="10"></div>
         </div>
         </div>
-
+    </div>
     {% endblock %}
